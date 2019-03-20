@@ -9,6 +9,22 @@
 	],
 "creatorBuild": "29156",
 "files": {
+	"/.gitattributes": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitattributes",
+		"oF": 0
+		},
+	"/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/.gitignore",
+		"oF": 0
+		},
 	"/Assets/FONT LIST.txt": {
 		"cB": 0,
 		"ft": 8192,
@@ -367,6 +383,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/img/menu-img.jpg": {
+		"ft": 16384,
+		"iS": 32453,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/menu-img.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/img/menu-img@2x.jpg": {
+		"ft": 16384,
+		"iS": 107474,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/img/menu-img@2x.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"/img/quotes.png": {
 		"ft": 32768,
 		"iS": 940,
@@ -458,10 +496,10 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/app.js",
-		"oF": 0,
+		"oAP": "/js/app-min.js",
+		"oF": 2,
 		"sC": 3,
-		"tS": 0
+		"tS": 1
 		},
 	"/js/pw.js": {
 		"bF": 0,
@@ -517,6 +555,25 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"/scss/modules/_all.scss": {
 		"aP": 0,
