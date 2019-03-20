@@ -1,0 +1,242 @@
+/* -------------------------------------------------------------------------- */
+/* SECTION STYLES */
+/* -------------------------------------------------------------------------- */
+body,
+html {
+  background: $bg-color;
+}
+.containerish {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.header-line {
+  height: 2px;
+  width: 80px;
+  background-color: $color-main;
+  margin-bottom: 1.5rem;
+}
+/* -------------------------------------------------------------------------- */
+/* HERO SECTION */
+/* -------------------------------------------------------------------------- */
+.hero {
+  background: url("../img/hero@2x.jpg") center / cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 10px;
+  position: relative;
+
+  .join-cta {
+    background: $color-white;
+    width: 305px;
+    min-height: 126px;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+    #cta-title {
+      margin-bottom: 0;
+    }
+    #cta-date {
+      margin: 0.1rem 0 0.4rem 0;
+    }
+  }
+
+  .section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .lead-copy {
+      text-align: center;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* FACE SECTION */
+/* -------------------------------------------------------------------------- */
+.face {
+  padding: 40px 20px;
+  background: url("../img/face-bg@2x.jpg") center / cover;
+  min-height: 400px;
+
+  .containerish {
+    display: grid;
+    overflow: hidden;
+
+    .section-header {
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 3rem;
+    }
+    .body-copy {
+      margin-bottom: 3rem;
+    }
+    .section-links {
+      margin-top: 4rem;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* BREAST SECTION */
+/* -------------------------------------------------------------------------- */
+.breast {
+  padding: 40px 20px;
+  background: url("../../img/breast-bg@2x.jpg") right / cover;
+  min-height: 400px;
+  position: relative;
+
+  .section-link,
+  .section-learn-more {
+    color: $color-white !important;
+
+    &:hover {
+      color: $color-main !important;
+    }
+  }
+
+  .containerish {
+    display: grid;
+    overflow: hidden;
+
+    .section-header {
+      text-align: center;
+    }
+    h2 {
+      margin-bottom: 3rem;
+    }
+    .body-copy {
+      margin-bottom: 3rem;
+    }
+    .section-links {
+      margin-top: 4rem;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* BODY SECTION */
+/* -------------------------------------------------------------------------- */
+.body {
+  min-height: 600px;
+  background: url("../../img/body-bg@2x.jpg") center / cover;
+  padding: 40px 20px 40px 20px;
+
+  .containerish {
+    display: grid;
+
+    .section-header {
+      text-align: center;
+    }
+    img {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      margin-bottom: 3rem;
+    }
+    .body-copy {
+      margin-bottom: 3rem;
+    }
+    .section-links:nth-child(5) {
+      margin-top: 4rem;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* INJECTABLES SECTION */
+/* -------------------------------------------------------------------------- */
+.injectables {
+  width: 100%;
+  min-height: 500px;
+  // background: url("../../img/injectables-bg@2x.jpg") right / cover;
+  background: #e8e8e8;
+  padding: 40px 20px;
+  position: relative;
+
+  .containerish {
+    display: grid;
+
+    .section-header {
+      text-align: center;
+    }
+    img {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      margin-bottom: 3rem;
+    }
+    .body-copy {
+      margin-bottom: 3rem;
+    }
+    .section-links:nth-child(5) {
+      margin-top: 4rem;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* BIO SECTION */
+/* -------------------------------------------------------------------------- */
+.bio {
+  padding: 40px 20px;
+  .containerish {
+    display: grid;
+
+    img {
+      margin: 2rem 0;
+    }
+
+    p {
+      margin: 0.5rem 0 2rem 0;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*.reviews SECTION */
+/* -------------------------------------------------------------------------- */
+.reviews {
+  width: 100%;
+  min-height: 500px;
+  background: url("../../img/reviews-bg@2x.jpg") right / cover;
+  padding: 60px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .containerish {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 40px;
+      height: auto;
+    }
+    .header-line {
+      background-color: rgba($color-white, 0.5) !important;
+      margin: 2rem 0;
+    }
+    .testimonial-slider {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+
+      .testimonial {
+        margin: 3rem 0 1rem 0;
+      }
+      .slick-dots li button:before {
+        font-size: 12;
+      }
+      .slick-dots li.slick-active button:before {
+        font-size: 12px;
+      }
+    }
+  }
+}

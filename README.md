@@ -1,0 +1,1 @@
+# JudgeMD-static

@@ -1,0 +1,42 @@
+/* -------------------------------------------------------------------------- */
+/* BUTTON STYLES */
+/* -------------------------------------------------------------------------- */
+@mixin btn-fade {
+  transition: all 0.3s ease-in-out;
+}
+
+.ui-btn {
+  font-family: $font-quarternary;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.05rem;
+  line-height: 0.9375rem;
+  padding: 0.6rem 0rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  // border-radius: 5px;
+  @include btn-fade;
+}
+
+.ui-btn-main {
+  background-color: $color-main;
+  border: 1px solid $color-main;
+  color: $color-white;
+
+  &:hover {
+    color: $color-white;
+    border: 1px solid lighten($color-main, 10);
+    background-color: lighten($color-main, 10);
+    text-decoration: none;
+  }
+}
+
+.ui-btn-group {
+  .ui-btn:not(:last-child) {
+    margin-right: 0.85rem;
+  }
+}

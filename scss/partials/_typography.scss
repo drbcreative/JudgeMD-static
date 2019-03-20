@@ -1,0 +1,117 @@
+/* -------------------------------------------------------------------------- */
+/* Typography */
+/* -------------------------------------------------------------------------- */
+@import "https://use.fontawesome.com/releases/v5.4.1/css/all.css";
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,700|Montserrat:300,300i,400,400i,600,700|Playfair+Display:400,400i,700,700i|Poppins:300,300i,400,400i,600,700");
+
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Montserrat", sans-serif;
+$font-tertiary: "Playfair Display", serif;
+$font-quarternary: "Lato", sans-serif;
+
+// General Font Setup
+// Headers
+/* Primary Header */
+h1 {
+  font-family: $font-secondary;
+  font-size: 4.6875rem; // 75px
+  line-height: 4.6875rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: $font-secondary;
+  font-size: 2rem; // 45px
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-secondary;
+}
+.section-header {
+  font-family: $font-tertiary;
+  font-size: 2.375rem;
+  line-height: 3.5625rem;
+  font-style: italic;
+  color: #999ba3;
+}
+.footer-header {
+  font-family: $font-secondary;
+  font-size: 1rem; // 16px
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+//Body Text
+.body-copy {
+  font-size: 1rem; // 20px
+  line-height: 2rem;
+  font-family: $font-primary;
+  font-weight: 300;
+
+  &.is-semibold {
+    font-weight: 600;
+  }
+
+  &.is-bold {
+    font-weight: 700;
+  }
+  &.is-italic {
+    font-style: italic;
+  }
+}
+
+/* Lead Text (hero) */
+.lead-copy {
+  font-family: $font-primary;
+  font-size: 1.375rem; // 22px
+  line-height: 2.0625rem;
+  font-weight: 300;
+}
+
+.testimonial-copy {
+  font-family: $font-primary;
+  font-size: 1.25rem; // 20px
+  line-height: 2.25rem;
+  font-weight: 300;
+}
+
+/* Text Modifiers */
+.wrap-75 {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+input {
+  font-family: $font-primary;
+  font-weight: 300;
+}
+
+// Font Size Breakpoints
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 200% !important;
+
+    .subscript {
+      font-size: 1.2rem;
+    }
+  }
+
+  h2 {
+    font-size: 200%;
+  }
+
+  h1 {
+    line-height: 2rem;
+  }
+
+  h2,
+  h3 {
+    line-height: 2rem;
+  }
+}

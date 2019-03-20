@@ -1,0 +1,35 @@
+/* -------------------------------------------------------------------------- */
+/* FOOTER */
+/* -------------------------------------------------------------------------- */
+footer {
+  min-height: 300px;
+  padding: 40px 20px 0 20px;
+
+  h2 {
+    font-weight: 300;
+  }
+
+  .containerish {
+    display: grid;
+    .footer-col-1 {
+      .fab {
+        margin-top: 1rem;
+        margin-right: 0.5rem;
+      }
+    }
+    .footer-col-2,
+    .footer-col-3 {
+      margin-top: 2rem;
+    }
+    .db-input {
+      width: 100%;
+      margin-bottom: 0.8rem;
+    }
+    .footnote {
+      margin-top: 2rem !important;
+      margin-bottom: 1rem;
+      display: block;
+      text-align: center;
+    }
+  }
+}

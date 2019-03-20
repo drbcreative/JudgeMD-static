@@ -1,0 +1,42 @@
+Font Primary - Poppins
+Font Secondary - Montserrat
+Font Tertiary - Playfair Display
+Font Quarternary - Lato
+
+Navbar:
+  Font Secondary, 15, Semi-Bold
+
+Hero Header:
+  Font Secondary, 75, Semi-Bold & Light
+
+Hero Lead:
+  Font Primary, 22, Light
+
+Section Header:
+  Font Tertiary, 38, Italic
+
+h2:
+  Font Secondary, 32, Semi-Bold
+
+h3, h4, h5: Undefined
+
+Body Copy:
+  Font Primary, 16, Light
+
+Learn More Btn:
+  Font Secondary, 20, Semi-Bold
+
+Section Links:
+  Font Secondary, 16, Light
+
+Testimonial Copy
+  Font Primary, 20, Light
+
+Testimonial Caption:
+  Font Primary, 16, Bold
+
+Footer Headers:
+  Font Secondary, 16, Semi-Bold
+
+Standard Btn:
+  Font Quarternary, 15, Bold
