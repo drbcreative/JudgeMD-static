@@ -91,7 +91,7 @@ html {
 /* -------------------------------------------------------------------------- */
 .breast {
   padding: 40px 20px;
-  background: url("../../img/breast-bg@2x.jpg") right / cover;
+  background: url("../img/breast-bg@2x.jpg") right / cover;
   min-height: 400px;
   position: relative;
 
@@ -127,7 +127,7 @@ html {
 /* -------------------------------------------------------------------------- */
 .body {
   min-height: 600px;
-  background: url("../../img/body-bg@2x.jpg") center / cover;
+  background: url("../img/body-bg@2x.jpg") center / cover;
   padding: 40px 20px 40px 20px;
 
   .containerish {
@@ -156,7 +156,7 @@ html {
 .injectables {
   width: 100%;
   min-height: 500px;
-  // background: url("../../img/injectables-bg@2x.jpg") right / cover;
+  // background: url("../img/injectables-bg@2x.jpg") right / cover;
   background: #e8e8e8;
   padding: 40px 20px;
   position: relative;
@@ -204,7 +204,7 @@ html {
 .reviews {
   width: 100%;
   min-height: 500px;
-  background: url("../../img/reviews-bg@2x.jpg") right / cover;
+  background: url("../img/reviews-bg@2x.jpg") right / cover;
   padding: 60px 20px;
   position: relative;
   display: flex;
