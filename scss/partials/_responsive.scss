@@ -195,10 +195,14 @@
   }
   /* Footer Section ------------------------------------------------ */
   footer {
-    padding: 60px 0;
+    padding: 60px 0 10px 0;
     .containerish {
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 2rem;
+
+      .db-input {
+        max-width: 90%;
+      }
 
       .footer-col-1,
       .footer-col-2,
@@ -304,6 +308,13 @@
   }
   /* Reviews Section ----------------------------------------------- */
   /* Footer Section ------------------------------------------------ */
+  footer {
+    .containerish {
+      .db-input {
+        max-width: 80%;
+      }
+    }
+  }
 }
 
 /* -------------------------------------------------------------------------- */

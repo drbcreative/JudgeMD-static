@@ -10,6 +10,7 @@ footer {
   }
 
   .containerish {
+    // max-width: 100%;
     display: grid;
     .footer-col-1 {
       .fab {
@@ -31,5 +32,12 @@ footer {
       display: block;
       text-align: center;
     }
+  }
+
+  ::placeholder {
+    letter-spacing: 0.05rem;
+    margin-left: 0.2rem;
+    padding-left: 0.6rem;
+    color: rgba($color-black, 0.6);
   }
 }
