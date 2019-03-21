@@ -1,12 +1,12 @@
-const menuTrigger = document.querySelector(".nav-burger"),
+const menuTrigger = document.querySelector(".nav-burger-container"),
+  burgerLine = document.querySelectorAll(".burger-line"),
   menu = document.querySelector(".menu-container");
 
 menuTrigger.addEventListener("click", function() {
-  console.log("this worked");
+  // console.log("this worked");
 
-  menu.classList.add("show");
-});
-
-menu.addEventListener("click", function() {
-  menu.classList.remove("show");
+  menu.classList.toggle("show");
+  burgerLine.forEach(line => {
+    line.classList.toggle("show");
+  });
 });

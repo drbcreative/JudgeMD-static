@@ -30,6 +30,12 @@ html {
   padding: 40px 10px;
   position: relative;
 
+  #hero-logo {
+    width: 70%;
+    max-width: 420px;
+    margin-bottom: 2rem;
+  }
+
   .join-cta {
     background: $color-white;
     width: 305px;

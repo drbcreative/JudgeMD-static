@@ -17,6 +17,11 @@ footer {
         margin-top: 1rem;
         margin-right: 0.5rem;
       }
+      #footer-logo {
+        max-width: 245px;
+        display: block;
+        margin-bottom: 2rem;
+      }
     }
     .footer-col-2,
     .footer-col-3 {
@@ -38,6 +43,7 @@ footer {
     letter-spacing: 0.05rem;
     margin-left: 0.2rem;
     padding-left: 0.6rem;
-    color: rgba($color-black, 0.6);
+    color: rgba($color-black, 0.8);
+    font-size: 12px;
   }
 }

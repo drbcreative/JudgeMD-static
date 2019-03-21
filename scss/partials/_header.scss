@@ -1,15 +1,85 @@
 /* -------------------------------------------------------------------------- */
 /* HEADER - TOPBAR AND NAVBAR IF NEEDED */
 /* -------------------------------------------------------------------------- */
-/* -------------------------------------------------------------------------- */
-/* NAVBAR */
-/* -------------------------------------------------------------------------- */
+
+/* navburger */
+.nav-burger-container {
+  position: fixed;
+  top: 35px;
+  right: 20px;
+  background: transparent;
+  z-index: 999999;
+  cursor: default;
+  padding: 15px 15px;
+  grid-column: 3 / 4;
+
+  &.show {
+    background: $color-dark;
+  }
+
+  .nav-burger {
+    width: 45px;
+    height: 45px;
+
+    .burger-line {
+      height: 4px;
+      width: 100%;
+      background-color: #fff;
+      display: block;
+      margin-bottom: 6px;
+      transition: all 0.3s ease-in-out;
+
+      &.show {
+        background-color: $color-dark;
+
+        &.burger-line:nth-child(1) {
+          transform: rotate(40deg);
+          margin-top: 8px;
+          transition: all 0.3s ease-in-out;
+        }
+        &.burger-line:nth-child(2) {
+          transition: all 0.1s ease-in-out;
+          visibility: hidden;
+        }
+        &.burger-line:nth-child(3) {
+          transform: rotate(-40deg);
+          margin-top: -21px;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+    .burger-line {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// .nav-burger {
+//   position: relative;
+//   width: 40px;
+//   margin: 0 auto;
+//   opacity: 0.8;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   transition: all 0.3s ease-in-out;
+
+//   &:hover {
+//     opacity: 1;
+//     transition: all 0.3s ease-in-out;
+//   }
+// }
+
+/* header */
 header {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 75px;
+  height: 120px;
   z-index: 999;
   // background: white;
   display: flex;
@@ -24,11 +94,13 @@ header {
   .main-navbar {
     width: 100%;
     display: grid;
-    grid-template-columns: 85px 1fr 50px;
-    grid-column-gap: 3%;
+    grid-template-columns: 85px 1fr 70px;
+    grid-column-gap: 2rem;
     align-items: center;
+    justify-content: flex-end;
 
     .social-menu {
+      visibility: hidden;
       .fab:nth-child(1) {
         margin-right: 1rem;
         display: inline-block;
@@ -37,7 +109,8 @@ header {
 
     .nav-menu {
       // display: flex;
-      // justify-content: flex-end;
+      justify-content: flex-end;
+      align-self: flex-end;
       display: none;
 
       .navbar-link {
@@ -70,44 +143,8 @@ header {
         }
       }
     }
-    .nav-burger {
-      width: 40px;
-      margin: 0 auto;
-      cursor: pointer;
-      opacity: 0.8;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      grid-column: 3 / 4;
-      transition: all 0.3s ease-in-out;
-      .burger-line {
-        height: 4px;
-        width: 100%;
-        background-color: #fff;
-        display: block;
-        margin-bottom: 6px;
-      }
-      .burger-line:nth-child(3) {
-        margin-bottom: 0;
-      }
-
-      &:hover {
-        opacity: 1;
-        transition: all 0.3s ease-in-out;
-      }
-    }
   }
 }
-/* Menu Styles */
-// @keyframes menuAnim {
-//   from {
-//     transform: translateY(-100%);
-//   }
-//   to {
-//     transform: translateY(0);
-//   }
-// }
 .menu-container {
   position: fixed;
   top: 0;
@@ -116,17 +153,21 @@ header {
   height: 100vh;
   overflow: hidden;
   background: rgba($color-white, 1);
-  z-index: 9999999;
+  z-index: 99999;
   display: grid;
+  visibility: hidden;
 
-  transform: translateY(-100%);
-  transition: all 0.3s ease-in-out;
+  transform: translateY(-5%);
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s ease-in-out,
+    transform 0.4s ease-in-out;
 
   &.show {
-    // animation: menuAnim 3s ease-in-out;
-    // animation-iteration-count: 1;
+    visibility: visible;
     transform: translateY(0);
-    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    transition: visibility 0.3s linear, opacity 0.2s ease-in-out,
+      transform 0.4s ease-in-out;
   }
 
   .menu-left {

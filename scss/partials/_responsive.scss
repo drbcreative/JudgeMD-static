@@ -152,13 +152,24 @@
     margin: 0 auto;
   }
   /* Header Section ------------------------------------------------ */
+  header {
+    .main-navbar {
+      .social-menu {
+        visibility: visible;
+        .fab:nth-child(1) {
+          margin-right: 1rem;
+          display: inline-block;
+        }
+      }
+    }
+  }
   .menu-container {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
 
     .menu-left {
       grid-column: 1 / 2;
-      background: url("../../img/menu-img@2x.jpg") center / cover;
+      background: url("../img/menu-img@2x.jpg") center / cover;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -167,6 +178,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        p {
+          text-align: center;
+        }
+
+        visibility: hidden;
       }
     }
   }
