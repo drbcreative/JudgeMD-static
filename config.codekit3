@@ -41,14 +41,6 @@
 		"oAP": "/Assets/judge_md_v11.xd",
 		"oF": 0
 		},
-	"/Assets/judge_md_v12.xd": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/Assets/judge_md_v12.xd",
-		"oF": 0
-		},
 	"/css/theme-min.css": {
 		"aP": 1,
 		"bl": 0,
@@ -95,7 +87,7 @@
 		"oAP": "/img/body-bg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/body-bg@2x.jpg": {
@@ -106,7 +98,7 @@
 		"oAP": "/img/body-bg@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/body.png": {
@@ -205,7 +197,7 @@
 		"oAP": "/img/face-bg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/face-bg@2x.jpg": {
@@ -216,7 +208,7 @@
 		"oAP": "/img/face-bg@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"/img/face.png": {

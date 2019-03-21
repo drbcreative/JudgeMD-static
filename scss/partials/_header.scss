@@ -30,7 +30,7 @@
       }
 
       &.active {
-        background-color: $color-dark;
+        background-color: $color-main;
         &.burger-line:nth-child(1) {
           transform: rotate(40deg);
           margin-top: 8px;
@@ -72,6 +72,7 @@ header {
   &.show {
     background-color: #fff;
     transition: all 0.3s ease-in-out;
+    box-shadow: 0 6px 12px rgba($color-black, 0.07);
   }
 
   .containerish {
@@ -192,10 +193,11 @@ header {
     display: none;
   }
   .menu-right {
-    ul {
+    .side-menu {
+      width: 100%;
       list-style-type: none;
       margin-top: 0;
-      padding: 45px 2rem;
+      padding: 45px 0;
       min-height: 70vh;
       display: flex;
       flex-direction: column;
@@ -204,6 +206,7 @@ header {
       li {
         display: block;
         width: 100%;
+        position: relative;
 
         a {
           font-family: $font-secondary;
@@ -212,36 +215,71 @@ header {
           color: $color-dark;
           display: block;
           width: 100%;
+          padding: 1rem 2rem;
 
           &:hover {
             text-decoration: none;
-            color: $color-main;
+            color: $color-dark;
+            background: $bg-color;
+          }
+        }
+      }
+      .menu-footer {
+        height: 30vh;
+        margin-left: 2rem;
+
+        .social-menu {
+          width: 100%;
+          display: flex;
+          a {
+            margin-left: 0.5rem;
+          }
+          a:nth-child(1) {
+            margin-left: 0;
+          }
+        }
+        .menu-logo {
+          max-width: 169px;
+          margin: 1rem 0;
+          display: block;
+        }
+        a {
+          display: block;
+        }
+      }
+      .dropmenu {
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: 0;
+        left: -50%;
+        right: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+        background: $bg-color;
+        padding: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+
+        li {
+          display: block;
+          // width: 100%;
+          a {
+            &:hover {
+              background-color: $color-white;
+              transition: all 0.1s ease-in-out;
+            }
           }
         }
       }
     }
-    .menu-footer {
-      height: 30vh;
-      margin-left: 2rem;
-
-      .social-menu {
-        width: 100%;
-        display: flex;
-        a {
-          margin-left: 0.5rem;
-        }
-        a:nth-child(1) {
-          margin-left: 0;
-        }
-      }
-      .menu-logo {
-        max-width: 169px;
-        margin: 1rem 0;
-        display: block;
-      }
-      a {
-        display: block;
-      }
+    .dropdown-trigger:hover > .dropmenu {
+      visibility: visible;
+      opacity: 1;
+      transition: all 0.3s ease-in-out;
     }
   }
 }
