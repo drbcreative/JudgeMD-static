@@ -190,6 +190,8 @@ header {
             display: block;
             width: 100%;
             a {
+              font-family: $font-secondary;
+              font-size: 15px;
               display: block;
               width: 100%;
               color: $color-dark;
