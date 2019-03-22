@@ -85,7 +85,7 @@ header {
   .main-navbar {
     width: 100%;
     display: grid;
-    grid-template-columns: 300px 1fr 70px;
+    grid-template-columns: max-content 1fr 70px;
     grid-column-gap: 2rem;
     align-items: center;
     justify-content: flex-end;
@@ -95,7 +95,7 @@ header {
       max-width: 150px;
       height: auto;
       // grid-column: 1 / 2;
-      margin-left: 3rem;
+      // margin-left: 3rem;
       transition: all 0.3s ease-in-out;
 
       &.active {
@@ -124,50 +124,90 @@ header {
     }
 
     .nav-menu {
-      // display: flex;
+      display: flex;
       justify-content: flex-end;
       align-self: center;
       display: none;
+      list-style-type: none;
+      margin-bottom: 0;
 
-      .navbar-link {
-        font-family: $font-secondary;
-        font-size: 15px;
-        font-weight: 600;
-        color: white;
-        margin-left: 2rem;
-        transition: all 0.3s ease-in-out;
+      li.top-level-li {
+        position: relative;
+        margin-right: 1rem;
 
-        &::before {
+        &::after {
           content: "|";
-          margin-right: 2rem;
+          margin-left: 1rem;
           color: rgba($color-white, 0.5);
           vertical-align: bottom;
         }
 
-        &:hover {
-          color: $color-main;
-          text-decoration: none;
-          transition: all 0.3s ease-in-out;
+        &:last-child {
+          margin-right: 0;
+          &::after {
+            content: "";
+            margin-left: 0;
+          }
         }
 
-        &.active {
-          color: $color-dark;
+        .navbar-link {
+          font-family: $font-secondary;
+          font-size: 15px;
+          font-weight: 600;
+          color: white;
+          // margin-left: 2rem;
           transition: all 0.3s ease-in-out;
 
           &:hover {
             color: $color-main;
+            text-decoration: none;
+            transition: all 0.1s ease-in-out;
+          }
+
+          &.active {
+            color: $color-dark;
+            transition: all 0.1s ease-in-out;
+
+            &:hover {
+              color: $color-main;
+            }
+          }
+        }
+        .horiz-dropmenu {
+          min-width: 250px;
+          position: absolute;
+          // top: 40px;
+          left: 0;
+          padding-left: 0;
+          padding-top: 0.5rem;
+          list-style-type: none;
+          background: rgba($color-white, 0.8);
+          visibility: hidden;
+          opacity: 0;
+          transition: all 0.2s ease-in-out;
+
+          li {
+            display: block;
+            width: 100%;
+            a {
+              display: block;
+              width: 100%;
+              color: $color-dark;
+              padding: 0.2rem 1rem;
+
+              &:hover {
+                background-color: $color-main;
+                color: $color-white;
+                text-decoration: none;
+              }
+            }
           }
         }
       }
-      .navbar-link:nth-child(1) {
-        margin-left: 0;
-
-        &::before {
-          content: "";
-          margin-right: 2rem;
-          color: rgba($color-white, 0.5);
-          vertical-align: bottom;
-        }
+      .top-level-li:hover > .horiz-dropmenu {
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
       }
     }
   }
