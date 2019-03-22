@@ -154,15 +154,18 @@
   /* Header Section ------------------------------------------------ */
   header {
     .main-navbar {
+      width: 100%;
       .top-menu-logo {
         display: none;
-        max-width: 250px;
+        max-width: 150px;
         height: auto;
         grid-column: 1 / 2;
+        margin-left: 0;
         transition: all 0.3s ease-in-out;
 
         &.active {
           display: inline;
+          // margin-left: 6rem;
           transition: all 0.3s ease-in-out;
         }
       }
@@ -197,6 +200,7 @@
     }
   }
   .menu-container {
+    position: fixed;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
 
@@ -217,6 +221,45 @@
         }
 
         visibility: hidden;
+      }
+    }
+    .menu-right {
+      padding: 30px 0;
+      .side-menu {
+        li {
+          a {
+            padding: 1rem 2rem;
+          }
+        }
+        .dropmenu {
+          position: absolute;
+          width: auto;
+          height: auto;
+          top: 0;
+          left: -80%;
+          right: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center !important;
+          justify-content: center !important;
+          background: $bg-color;
+          padding: 0;
+          display: block;
+          visibility: hidden;
+          opacity: 0;
+          transition: all 0.3s ease-in-out;
+
+          li {
+            display: block;
+            // width: 100%;
+            a {
+              &:hover {
+                background-color: $color-white;
+                transition: all 0.1s ease-in-out;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -280,6 +323,19 @@
 /* EXTRA LARGE BREAKPOINT (Large Desktops 1200px and up) */
 /* -------------------------------------------------------------------------- */
 @media screen and (min-width: 1200px) {
+  /* Side Nav Section ---------------------------------------------- */
+  .menu-container {
+    .menu-right {
+      padding: 55px 0;
+      .side-menu {
+        li {
+          a {
+            padding: 0.7rem 2rem;
+          }
+        }
+      }
+    }
+  }
   /* Face Section -------------------------------------------------- */
   .face {
     .containerish {
@@ -379,7 +435,20 @@
 /* -------------------------------------------------------------------------- */
 /* SUPER LARGE BREAKPOINT (IMAC STATUS 1900px and up) */
 /* -------------------------------------------------------------------------- */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1900px) {
+  .menu-container {
+    .menu-right {
+      padding: 45px 0;
+      .side-menu {
+        li {
+          a {
+            font-size: 2rem;
+            padding: 1rem 2rem;
+          }
+        }
+      }
+    }
+  }
   /* Injectables Section ------------------------------------------- */
   /* Bio Section --------------------------------------------------- */
   /*.reviews Section ----------------------------------------------- */
