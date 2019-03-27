@@ -21,6 +21,15 @@ html {
 section {
   overflow: hidden;
 }
+/* Consultation Form */
+.consultation {
+  display: none;
+}
+.form-control:focus {
+  border-color: $color-dark;
+  box-shadow: inset 0 1px 1px rgba($color-dark, 0.075),
+    0 0 8px rgba($color-dark, 0.6);
+}
 /* -------------------------------------------------------------------------- */
 /* HERO SECTION */
 /* -------------------------------------------------------------------------- */
@@ -75,12 +84,12 @@ section {
 /* -------------------------------------------------------------------------- */
 .face {
   padding: 40px 20px;
-  background: url("../img/face-bg@2x.jpg") center / cover;
+  // background: url("../img/face-bg@2x.jpg") center / cover;
+  background: #f7f7f7;
   min-height: 400px;
-
+  overflow: hidden;
   .containerish {
     display: grid;
-    overflow: hidden;
 
     .section-header {
       text-align: center;
@@ -93,6 +102,34 @@ section {
     }
     .section-links {
       margin-top: 4rem;
+    }
+  }
+}
+/* -------------------------------------------------------------------------- */
+/* BLENDING SECTION */
+/* -------------------------------------------------------------------------- */
+.blending {
+  background: url("../../img/newsection-bg@2x.jpg") center / cover;
+  padding: 40px 20px;
+
+  .containerish {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .section-info {
+      .section-header {
+        text-align: center;
+      }
+      h2 {
+        margin-bottom: 3rem;
+      }
+      .body-copy {
+        margin-bottom: 3rem;
+      }
+      .section-links {
+        margin-top: 4rem;
+      }
     }
   }
 }
