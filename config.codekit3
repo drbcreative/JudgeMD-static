@@ -33,20 +33,20 @@
 		"oAP": "/Assets/FONT LIST.txt",
 		"oF": 0
 		},
-	"/Assets/judge_md_v11.xd": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/Assets/judge_md_v11.xd",
-		"oF": 0
-		},
 	"/Assets/judge_md_v12.xd": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/Assets/judge_md_v12.xd",
+		"oF": 0
+		},
+	"/Assets/judge_md_v14.xd": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/Assets/judge_md_v14.xd",
 		"oF": 0
 		},
 	"/css/theme-min.css": {
@@ -225,30 +225,30 @@
 		"oA": 0,
 		"oAP": "/img/face.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
 	"/img/face2.png": {
 		"ft": 32768,
-		"iS": 834537,
+		"iS": 176624,
 		"oA": 0,
 		"oAP": "/img/face2.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
 	"/img/face2@2x.png": {
 		"ft": 32768,
-		"iS": 3358338,
+		"iS": 695058,
 		"oA": 0,
 		"oAP": "/img/face2@2x.png",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
