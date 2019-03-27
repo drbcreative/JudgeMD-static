@@ -4,7 +4,10 @@ const menuTrigger = document.querySelector(".nav-burger-container"),
   header = document.querySelector("header"),
   navLinks = document.querySelectorAll(".navbar-link"),
   topLogo = document.querySelector(".top-menu-logo"),
-  socialMenu = document.querySelector(".header-social-menu");
+  socialMenu = document.querySelector(".header-social-menu"),
+  consult = document.querySelector(".consultation"),
+  consultTrigger = document.querySelector("#consult-trigger"),
+  footer = document.querySelector("footer");
 
 menuTrigger.addEventListener("click", function(e) {
   e.preventDefault();
@@ -13,25 +16,6 @@ menuTrigger.addEventListener("click", function(e) {
     line.classList.toggle("active");
   });
 });
-
-/* Page element animatin */
-function aniMate(element) {
-  // Assign El
-  const el = document.querySelectorAll(element);
-
-  // Event Listener
-  window.addEventListener("scroll", function() {
-    el.forEach(elem => {
-      if (elem.getBoundingClientRect().top < window.innerHeight / 2) {
-        elem.classList.add("animate");
-      }
-    });
-  });
-}
-aniMate(".fade-in");
-aniMate(".fade-in-left");
-aniMate(".fade-in-right");
-aniMate(".scale-down");
 
 // Page scrolling Event Listener
 window.addEventListener("scroll", function() {
@@ -57,5 +41,34 @@ window.addEventListener("scroll", function() {
     navLinks.forEach(link => {
       link.classList.remove("active");
     });
+  }
+  // consult form
+  const footerTop = footer.getBoundingClientRect().top;
+  const consultTop = consult.getBoundingClientRect().top;
+  console.log(footerTop);
+  console.log(consultTop);
+
+  if (winScroll > 50) {
+    consult.classList.add("visible");
+  } else if (winScroll < 50) {
+    consult.classList.remove("visible");
+  }
+
+  if (consultTop > footerTop - 100) {
+    consult.classList.remove("visible");
+  }
+});
+
+// Constult Open
+let counter = 0;
+consultTrigger.addEventListener("click", function() {
+  if (counter !== 1) {
+    consultTrigger.textContent = "X";
+    consult.classList.toggle("open");
+    counter = 1;
+  } else {
+    consultTrigger.textContent = "+";
+    consult.classList.toggle("open");
+    counter = 0;
   }
 });
