@@ -67,7 +67,7 @@ consultTrigger.addEventListener("click", function() {
     consult.classList.toggle("open");
     counter = 1;
   } else {
-    consultTrigger.textContent = "+";
+    consultTrigger.innerHTML = `<img src="img/consult-arrow@2x.png" alt="">`;
     consult.classList.toggle("open");
     counter = 0;
   }

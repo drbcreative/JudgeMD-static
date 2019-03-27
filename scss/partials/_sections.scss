@@ -15,7 +15,7 @@ html {
 .header-line {
   height: 2px;
   width: 80px;
-  background-color: $color-main;
+  background-color: #a8b299;
   margin-bottom: 1.5rem;
 }
 section {
@@ -141,6 +141,10 @@ section {
   background: url("../img/breast-bg@2x.jpg") right / cover;
   min-height: 400px;
   position: relative;
+
+  .header-line {
+    background-color: $color-white;
+  }
 
   .section-link,
   .section-learn-more {

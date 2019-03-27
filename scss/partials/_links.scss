@@ -38,7 +38,8 @@
   transition: all 0.3s ease-in-out;
 
   &::after {
-    content: url("../img/link-chevron.png");
+    // content: url("../img/link-chevron.png");
+    content: ">";
     padding-left: 10px;
   }
 

@@ -204,28 +204,26 @@
     }
 
     .consult-wrapper {
-      padding: 1rem;
+      padding: 0.5rem 1rem;
       .constult-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 35px;
-        // border-bottom: 1px solid $color-dark;
         p {
           font-family: $font-primary;
-          font-size: 11px;
+          font-size: 12px;
           color: $color-dark;
           font-weight: 600;
           line-height: 0;
           margin: 0;
         }
-        p:nth-child(2) {
+        .consult-trigger {
           cursor: pointer;
-          color: $color-main;
-          font-size: 22px;
-          font-weight: 700;
-          line-height: 0;
-          margin: 0;
+          flex: 1;
+          img {
+            width: 25px !important;
+          }
         }
         margin-bottom: 1rem;
       }
@@ -508,7 +506,7 @@
     .containerish {
       padding: 80px 20px 0px 20px;
       grid-template-columns: 1fr 100px 100px 1fr;
-      grid-template-rows: 100px 1fr 300px;
+      grid-template-rows: 100px 100px 450px 25px;
 
       .section-header {
         text-align: left;
@@ -526,10 +524,14 @@
         padding-top: 3rem;
         grid-row: 3;
         grid-column: 1 / 2;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
+        // display: flex;
+        // flex-direction: column;
+        // align-items: flex-start;
+        // justify-content: center;
+      }
+      .section-links {
+        grid-row-start: 5;
+        // margin-top: 15rem;
       }
     }
   }

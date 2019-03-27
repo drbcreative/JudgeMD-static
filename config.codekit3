@@ -87,6 +87,28 @@
 		"oF": 0,
 		"oS": 3
 		},
+	"/images/nose_animation_atlas_.png": {
+		"ft": 32768,
+		"iS": 559776,
+		"oA": 0,
+		"oAP": "/images/nose_animation_atlas_.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/images/nose_animation_atlas_2.png": {
+		"ft": 32768,
+		"iS": 672574,
+		"oA": 0,
+		"oAP": "/images/nose_animation_atlas_2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/img/body-bg.jpg": {
 		"ft": 16384,
 		"iS": 39035,
@@ -100,13 +122,13 @@
 		},
 	"/img/body-bg@2x.jpg": {
 		"ft": 16384,
-		"iS": 144208,
+		"iS": 2299269,
 		"jF": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "/img/body-bg@2x.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"/img/body.png": {
@@ -173,6 +195,28 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
+		"q": 100
+		},
+	"/img/consult-arrow.png": {
+		"ft": 32768,
+		"iS": 238,
+		"oA": 0,
+		"oAP": "/img/consult-arrow.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/img/consult-arrow@2x.png": {
+		"ft": 32768,
+		"iS": 485,
+		"oA": 0,
+		"oAP": "/img/consult-arrow@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"/img/dr-bio.jpg": {
@@ -573,8 +617,8 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "/js/slider-init.js",
-		"oF": 0,
+		"oAP": "/js/slider-init.min.js",
+		"oF": 2,
 		"sC": 3,
 		"tS": 0
 		},
@@ -621,6 +665,25 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"/js/vendor/nose_animation.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/js/vendor/nose_animation.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"/nose_animation.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/nose_animation.html",
+		"oF": 0
 		},
 	"/README.md": {
 		"cB": 0,
