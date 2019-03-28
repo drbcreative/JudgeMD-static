@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/theme-min.css" />
   </head>
 
-  <body>
+  <body onload="init();">
     <a href="#" class="nav-burger-container">
       <div href="#" class="nav-burger">
         <span class="burger-line"></span>
@@ -209,6 +209,11 @@
 
     <!-- blending -->
     <section class="blending">
+      <div class="video-bg">
+        <video autoplay muted loop id="nose-video">
+          <source src="video/nose_animation.mp4" type="video/mp4">
+        </video>
+      </div>
       <div class="containerish">
         <div class="section-info">
           <div class="header-line"></div>

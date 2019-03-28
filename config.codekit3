@@ -1050,6 +1050,14 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"/video/nose_animation.mp4": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/video/nose_animation.mp4",
+		"oF": 0
 		}
 	},
 "hooks": [

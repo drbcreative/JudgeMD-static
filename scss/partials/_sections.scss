@@ -112,6 +112,10 @@ section {
   background: url("../img/newsection-bg@2x.jpg") center / cover;
   padding: 40px 20px;
 
+  .video-bg {
+    display: none;
+  }
+
   .containerish {
     display: flex;
     align-items: center;
